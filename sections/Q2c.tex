@@ -1,0 +1,19 @@
+\textbf{Solution:}
+
+\textbf{Mapping of Unoptimized and Optimized Code to C Source}
+
+The difference between the unoptimized (`-O0`) and optimized (`-O3`) code lies in how assembly instructions map to the original C code.
+
+\begin{itemize}
+    \item \textbf{-O0 (Unoptimized version)}:
+    \begin{itemize}
+        \item The unoptimized version follows a $\boxed{\textbf{“block”}}$ pattern, where each C statement corresponds directly to a set of assembly instructions.
+        \item Each block of C code generates a block of assembly instructions, often including redundant instructions like `nop`. The instructions are laid out in sequence, matching the C code line by line, making it easy to trace but resulting in verbose and inefficient code.
+    \end{itemize}
+
+    \item \textbf{-O3 (Optimized version)}:
+    \begin{itemize}
+        \item The optimized version exhibits a $\boxed{\textbf{“stripe”}}$ pattern, where assembly instructions correspond to multiple lines of C code.
+        \item The compiler optimizes by reordering, combining, or eliminating instructions. This leads to assembly instructions serving multiple parts of the C code, reducing redundancy and improving efficiency. As a result, the mapping is more scattered (stripes) and less direct, making it harder to trace.
+    \end{itemize}
+\end{itemize}

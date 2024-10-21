@@ -1,0 +1,16 @@
+\textbf{Solution:}
+
+\textbf{General Strategies Taken by the Optimizer}
+
+Based on the comparison between unoptimized (`-O0`) and optimized (`-O3`) code, we can infer several general strategies that the optimizer uses to improve performance:
+
+\begin{itemize}
+    \item \textbf{Fewer Instructions:}
+    The optimized version has significantly fewer lines of assembly code compared to the unoptimized version. This reduction is achieved by removing redundant instructions, such as \texttt{nop}, and optimizing the code to perform the same tasks with fewer operations, resulting in more efficient execution.
+
+    \item \textbf{Reduced Memory Access:}
+    The optimized code makes fewer memory accesses by using registers more effectively (register allocation). By minimizing unnecessary load and store operations, the optimizer reduces the overhead of accessing slower memory resources, which improves performance.
+
+    \item \textbf{Instruction Optimization:}
+    The optimizer improves instruction execution through techniques like instruction reordering. By rearranging instructions to minimize stalls, hazards, and dependencies, it allows for more efficient use of the CPU. This optimization is reflected in the "striped" pattern of the optimized assembly code, where instructions correspond to multiple lines of C code instead of following a direct, line-by-line mapping.
+\end{itemize}
