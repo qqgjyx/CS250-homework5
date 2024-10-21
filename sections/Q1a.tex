@@ -1,44 +1,64 @@
 \textbf{Solution:}
 
-\textbf{Step 1: Convert the Hex String to Binary}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        A & B & C & !C$\cdot$B & A \texttt{XOR} (BC) & [(!C$\cdot$B) \texttt{XOR} (A \texttt{XOR} (BC))] & A$\cdot$!C & Output \\
+        \hline
+        0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
+        0 & 1 & 1 & 0 & 1 & 1 & 0 & 1 \\
+        1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 \\
+        1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 \\
+        1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 \\
+        1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
+        \hline
+    \end{tabular}
+    \caption{Detailed truth table for Output = [(!C$\cdot$B) \texttt{XOR} (A \texttt{XOR} (BC))] + A$\cdot$!C}
+    \label{tab:detailed_truth_table}
+\end{table}
 
-First, convert each hex digit to its 4-bit binary equivalent:
-
-\[
-\begin{array}{ccccccccc}
-\text{Hex:} & 2 & 0 & A & 3 & 0 & 0 & 1 & 2 \\
-\text{Bin:} & 0010 & 0000 & 1010 & 0011 & 0000 & 0000 & 0001 & 0010 \\
-\end{array}
-\]
-
-\textbf{Step 2: Identify the Opcode}
-
-Opcode (bits 31-26): \(001000\). Which corresponds to the \texttt{ADDI} instruction in MIPS.  \cite{MIPS32}
-
-\textbf{Step 3: Break Down the Binary Instruction}
-
-MIPS instructions come in: R-type, I-type, and J-type. Based on the opcode, we can determine the format. The instruction format for I-type (which includes \texttt{ADDI}) is:
-
+\noindent
+Where:
 \begin{itemize}
-    \item \textbf{Opcode (bits 31-26)}: \(001000\) (binary) \(= 8\) (decimal)
-    \item \textbf{rs (bits 25-21)}: \(00101\) (binary) \(= \$5\) (register 5)
-    \item \textbf{rt (bits 20-16)}: \(00011\) (binary) \(= \$3\) (register 3)
-    \item \textbf{Immediate (bits 15-0)}: \(0000000000010010\) (binary) \(= 18\) (decimal)
+    \item \texttt{XOR} represents XOR operation
+    \item $\cdot$ represents AND operation
+    \item + represents OR operation
+    \item ! represents NOT operation
+\end{itemize}
+\noindent
+The Output column is calculated as the OR (+) of the two previous columns:
+\begin{itemize}
+    \item Output = [(!C$\cdot$B) \texttt{XOR} (A \texttt{XOR} (BC))] + A$\cdot$!C
 \end{itemize}
 
+\vspace{1cm}
 
+\noindent
+Simplified truth table showing only inputs and output:
 
-\textbf{Step 4: Assemble the Instruction}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        A & B & C & Output \\
+        \hline
+        0 & 0 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 1 & 0 & 1 \\
+        0 & 1 & 1 & 1 \\
+        1 & 0 & 0 & 1 \\
+        1 & 0 & 1 & 1 \\
+        1 & 1 & 0 & 1 \\
+        1 & 1 & 1 & 0 \\
+        \hline
+    \end{tabular}
+    \caption{Simplified truth table for the Boolean function}
+    \label{tab:simplified_truth_table}
+\end{table}
 
-Now, we can construct the instruction:
-
-\[
-\boxed{
-\texttt{addi \$3, \$5, 18}
-}
-\quad \text{or} \quad
-\boxed{
-\texttt{addi \$v1, \$a1, 18}
-}
-\]
-
+% ----------------------------------------------------------------
+% Drafted by Juntang Wang 2024-10-21
+% ----------------------------------------------------------------  

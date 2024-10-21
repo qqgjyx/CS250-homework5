@@ -1,5 +1,18 @@
 \documentclass[12pt]{article} % Sets the font size to 12pt and defines the document as an article
 
+\usepackage[
+backend=biber, 
+citestyle=ieee,
+sorting=nyt,    
+doi=false,
+url=false,
+isbn=false,
+giveninits=true,
+maxbibnames=9999,
+hyperref]{biblatex}
+
+\addbibresource{CS250.bib} 
+
 % Packages for mathematical fonts and symbols
 \usepackage{amsfonts, amssymb, amsmath}
 \usepackage{booktabs}
@@ -22,7 +35,7 @@
 
 \pagestyle{fancy}
 \fancyhf{} % Clears default header and footer
-\fancyhead[L]{CS250/homework1/JuntangWang} 
+\fancyhead[L]{CS250/homework5/JuntangWang} 
 \fancyhead[C]{\today} 
 \fancyhead[R]{\thepage} 
 
@@ -32,7 +45,7 @@
 \newcommand{\qed}{\hfill $\square$} % End of proof symbol
 
 % Title Information
-\title{CS521 Homework1} % Replace with your actual title
+\title{CS521 Homework5} % Replace with your actual title
 \author{Juntang Wang}        % Replace with your actual name
 \date{\today}             % Automatically uses the current date
 
@@ -41,22 +54,13 @@
 \section{Q1}
 \subsection{(a)}
 \input{sections/Q1a}
-\subsection{(b)}
-\input{sections/Q1b}
-
-\section{Q2}
-\subsection{(a)}
-\input{sections/Q2a}
-\subsection{(b)}
-\input{sections/Q2b}
 \subsection{(c)}
-\input{sections/Q2c}
-\subsection{(d)}
-\input{sections/Q2d}
-\subsection{(e)}
-\input{sections/Q2e}
+\input{sections/Q1c}
 
-\bibliography{CS250}
-\bibliographystyle{IEEEtran}
+\printbibliography
 
 \end{document}
+
+% ----------------------------------------------------------------
+% Drafted by Juntang Wang 2024-10-21
+% ----------------------------------------------------------------
