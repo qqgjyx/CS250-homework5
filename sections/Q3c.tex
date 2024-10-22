@@ -4,14 +4,14 @@
 Let's perform an initial simplification:
 
 \begin{multicols}{2}
-\textbf{For D0:}
+\textbf{For D2:}
 \begin{align*}
-    D0 &= !Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
-       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 + \\
-       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
-       &\quad Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \\
-    &= !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
-    &\quad Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \\
+    D2 &= !Q2 \cdot !Q1 \cdot !Q0 \cdot !IL1 \cdot IL0 + \\
+       &\quad !Q2 \cdot Q1 \cdot Q0 \cdot IL1 \cdot !IL0 + \\
+       &\quad Q2 \cdot !Q1 \cdot !Q0 \cdot !IL1 \cdot IL0 + \\
+       &\quad Q2 \cdot Q1 \cdot Q0 \cdot IL1 \cdot !IL0 \\
+    &= !Q1 \cdot !Q0 \cdot !IL1 \cdot IL0 + \\
+    &\quad Q1 \cdot Q0 \cdot IL1 \cdot !IL0 \\
     \text{where} \\
     IL1 &= input\_leftright1 \\
     IL0 &= input\_leftright0 \\
@@ -21,25 +21,25 @@ Let's perform an initial simplification:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.66\linewidth]{figures/D0simp.png}
-    \caption{Simplified Boolean expression for D0 (simplified using Boolean algebra \cite{boolean-algebra})}
+    \caption{Simplified Boolean expression for D2 (simplified using Boolean algebra \cite{boolean-algebra})}
 \end{figure}
 \end{multicols}
 
 \begin{multicols}{2}
     \textbf{For D1:}
     \begin{align*}
-        D1 &=     !Q0 \cdot !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-           &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
-           &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-           &\quad !Q0 \cdot  Q1 \cdot !Q2 \cdot !IL1 \cdot !IL0 + \\
-           &\quad !Q0 \cdot  Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 + \\
-           &\quad !Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot !IL0 + \\
-           &\quad !Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot  IL0 \cdot !IS + \\
-           &\quad !Q0 \cdot  Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-           &\quad  Q0 \cdot !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-           &\quad  Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot !IL0 + \\
-           &\quad  Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot  IL0 \cdot !IS + \\
-           &\quad  Q0 \cdot  Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 \\
+        D1 &=     !Q2 \cdot !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+           &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
+           &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+           &\quad !Q2 \cdot  Q1 \cdot !Q0 \cdot !IL1 \cdot !IL0 + \\
+           &\quad !Q2 \cdot  Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 + \\
+           &\quad !Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot !IL0 + \\
+           &\quad !Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot  IL0 \cdot !IS + \\
+           &\quad !Q2 \cdot  Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+           &\quad  Q2 \cdot !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+           &\quad  Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot !IL0 + \\
+           &\quad  Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot  IL0 \cdot !IS + \\
+           &\quad  Q2 \cdot  Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 \\
            &\text{(SEE NEXT PAGE)}
     \end{align*}
 \end{multicols}
@@ -48,18 +48,18 @@ Let's perform an initial simplification:
 
 \begin{multicols}{2}
     \begin{align*}
-        &=     !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-        &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-        &\quad !Q0 \cdot  Q1 \cdot !Q2 \cdot !IL0 + \\
-        &\quad  Q1 \cdot  Q2 \cdot (!IL0 + !IL1 \cdot !IS)  \text{(by myself)}\\
-    &=     !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-    &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-    &\quad !Q0 \cdot  Q1 \cdot !IL0 + \\
-    &\quad  Q1 \cdot  Q2 \cdot (!IL0 + !IL1 \cdot !IS) \\
-        &=     !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-        &\quad !Q0 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-        &\quad !Q0 \cdot  Q1 \cdot !IL0 + \\
-        &\quad  Q1 \cdot  Q2 \cdot (!IL0 + !IL1 \cdot !IS) \text{(by myself)}\\
+        &=     !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+        &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+        &\quad !Q2 \cdot  Q1 \cdot !Q0 \cdot !IL0 + \\
+        &\quad  Q1 \cdot  Q0 \cdot (!IL0 + !IL1 \cdot !IS)  \text{(by myself)}\\
+    &=     !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+    &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+    &\quad !Q2 \cdot  Q1 \cdot !IL0 + \\
+    &\quad  Q1 \cdot  Q0 \cdot (!IL0 + !IL1 \cdot !IS) \\
+        &=     !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+        &\quad !Q2 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+        &\quad !Q2 \cdot  Q1 \cdot !IL0 + \\
+        &\quad  Q1 \cdot  Q0 \cdot (!IL0 + !IL1 \cdot !IS) \text{(by myself)}\\
     \end{align*}
     \columnbreak
     \begin{figure}[H]
@@ -70,33 +70,33 @@ Let's perform an initial simplification:
 \end{multicols}
 
 \begin{multicols}{2}
-    \textbf{For D2:}
+    \textbf{For D0:}
     \begin{align*}
-        D2  &=     !Q0 \cdot !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
-            &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot !IL1 \cdot !IL0 + \\
-            &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-            &\quad !Q0 \cdot  Q1 \cdot !Q2 \cdot !IL1 \cdot  IL0 \cdot !IS + \\
-            &\quad !Q0 \cdot  Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 + \\
-            &\quad !Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot !IL0 + \\
-            &\quad !Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot  IL0 \cdot  IS + \\
-            &\quad !Q0 \cdot  Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-            &\quad  Q0 \cdot !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
-            &\quad  Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot !IL0 + \\
-            &\quad  Q0 \cdot  Q1 \cdot  Q2 \cdot !IL1 \cdot  IL0 \cdot  IS + \\
-            &\quad  Q0 \cdot  Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 \\
-           &=     !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
-           &\quad !Q0 \cdot  Q2 \cdot (!IL1 \cdot !IL0 + !IL0 \cdot  IS) + \\
-           &\quad !Q0 \cdot  Q1 \cdot !Q2  \cdot !IL1 \cdot  IL0 \cdot !IS + \\
-           &\quad !Q0 \cdot  Q1 \cdot  IL1 \cdot !IL0 + \\
-           &\quad  Q1 \cdot  Q2 \cdot (!IL0 + !IL1 \cdot  IS) \text{(by myself)} \\
-        % &=     !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-        % &\quad !Q0 \cdot !Q1 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-        % &\quad !Q0 \cdot  Q1 \cdot !IL0 + \\
-        % &\quad  Q1 \cdot  Q2 \cdot (!IL0 + !IL1 \cdot !IS) \\
-        %     &=     !Q1 \cdot !Q2 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
-        %     &\quad !Q0 \cdot  Q2 \cdot  IL1 \cdot !IL0 + \\
-        %     &\quad !Q0 \cdot  Q1 \cdot !IL0 + \\
-        %     &\quad  Q1 \cdot  Q2 \cdot (!IL0 + !IL1 \cdot !IS) \text{(by myself)}\\
+        D0  &=     !Q2 \cdot !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
+            &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot !IL1 \cdot !IL0 + \\
+            &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+            &\quad !Q2 \cdot  Q1 \cdot !Q0 \cdot !IL1 \cdot  IL0 \cdot !IS + \\
+            &\quad !Q2 \cdot  Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 + \\
+            &\quad !Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot !IL0 + \\
+            &\quad !Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot  IL0 \cdot  IS + \\
+            &\quad !Q2 \cdot  Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+            &\quad  Q2 \cdot !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
+            &\quad  Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot !IL0 + \\
+            &\quad  Q2 \cdot  Q1 \cdot  Q0 \cdot !IL1 \cdot  IL0 \cdot  IS + \\
+            &\quad  Q2 \cdot  Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 \\
+           &=     !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot !IS + \\
+           &\quad !Q2 \cdot  Q0 \cdot (!IL1 \cdot !IL0 + !IL0 \cdot  IS) + \\
+           &\quad !Q2 \cdot  Q1 \cdot !Q0  \cdot !IL1 \cdot  IL0 \cdot !IS + \\
+           &\quad !Q2 \cdot  Q1 \cdot  IL1 \cdot !IL0 + \\
+           &\quad  Q1 \cdot  Q0 \cdot (!IL0 + !IL1 \cdot  IS) \text{(by myself)} \\
+        % &=     !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+        % &\quad !Q2 \cdot !Q1 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+        % &\quad !Q2 \cdot  Q1 \cdot !IL0 + \\
+        % &\quad  Q1 \cdot  Q0 \cdot (!IL0 + !IL1 \cdot !IS) \\
+        %     &=     !Q1 \cdot !Q0 \cdot  IL1 \cdot !IL0 \cdot  IS + \\
+        %     &\quad !Q2 \cdot  Q0 \cdot  IL1 \cdot !IL0 + \\
+        %     &\quad !Q2 \cdot  Q1 \cdot !IL0 + \\
+        %     &\quad  Q1 \cdot  Q0 \cdot (!IL0 + !IL1 \cdot !IS) \text{(by myself)}\\
         \end{align*}
         \columnbreak
         % \begin{figure}[H]
@@ -112,9 +112,9 @@ Let's perform an initial simplification:
 The logic expression of output bits are obivious:
 
 \begin{align*}
-    \text{out\_blocked} &=  Q0 \\
+    \text{out\_blocked} &=  Q2 \\
     \text{out\_posision1} &= Q1 \\
-    \text{out\_posision0} &= Q2
+    \text{out\_posision0} &= Q0
 \end{align*}
 
 
