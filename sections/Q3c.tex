@@ -6,13 +6,20 @@ Let's perform an initial simplification:
 \textbf{For D0:}
 \begin{align*}
     D0 &= !Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
-       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
-       &\quad !Q0 \cdot Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 \cdot IS + \\
        &\quad !Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 + \\
-       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 + \\
-       &\quad Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \\
-    &= 
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \\
 \end{align*}
+
+\noindent
+Using Boolean algebra, we can simplify the expression as follows (\cite{boolean-algebra}):
+\begin{align*}
+    D0 &= !Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 + \\
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \\
+\end{align*}
+
 
 \textbf{For D1:}
 \begin{align*}
