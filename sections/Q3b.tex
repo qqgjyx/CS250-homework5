@@ -4,38 +4,38 @@
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
         \hline
-        Q0& Q1& Q2& out\_blocked & out\_position1&out\_position0& in\_leftright1 &in\_leftright0& in\_speed& D0& D1&D2\\
+        \textbf{Q0} & \textbf{Q1} & \textbf{Q2} & \textbf{OB} & \textbf{OP1} & \textbf{OP0} & \textbf{IL1} & \textbf{IL0} & \textbf{IS} & \textbf{D0} & \textbf{D1} & \textbf{D2} \\
         \hline
-        0 & 0 & 0 & 0  & 0  &0& 0&0& X& 0& 0&0\\ \hline 
- 0 & 0 & 0 & 0  & 0  &0& 0& 1& X& 1& 1&1\\ \hline 
- 0 & 0 & 0 & 0  & 0  &0& 1& 0& 0& 0& 0&1\\ \hline 
- 0 & 0 & 0 & 0  & 0  &0& 1& 0& 1& 0& 1&0\\ \hline 
-        0 & 0 & 1 & 0  & 0  &1& 0&0& X& 0& 0&1\\ \hline 
- 0 & 0 & 1 &  0  & 0  &1& 0& 1& 0& 0& 0&0\\ \hline 
- 0 & 0 & 1 &  0  & 0  &1& 0& 1& 1& 1& 1&1\\ \hline 
- 0 & 0 & 1 &  0  & 0  &1& 1& 0& 0& 0& 1&0\\ \hline 
- 0 & 0 & 1 &  0  & 0  &1& 1& 0& 1& 0& 1&1\\ \hline 
-        0 & 1 & 0 & 0  & 1  &0& 0&0& X& 0& 1&0\\ \hline 
- 0 & 1 & 0 & 0  & 1  & 0& 0& 1& 0& 0& 0&1\\ \hline 
- 0 & 1 & 0 & 0  & 1  & 0& 0& 1& 1& 0& 0&0\\ \hline 
- 0 & 1 & 0 & 0  & 1  & 0& 1& 0& 0& 0& 1&1\\ \hline 
- 0 & 1 & 0 & 0  & 1  & 0& 1& 0& 1& 1& 0&0\\ \hline 
-        0 & 1 & 1 & 0 & 1&1& 0&0& X& 0& 1&1\\ \hline 
- 0 & 1 & 1 & 0 & 1& 1& 0& 1& 0& 0& 1&0\\ \hline 
- 0 & 1 & 1 & 0 & 1& 1& 0& 1& 1& 0& 0&1\\ \hline 
- 0 & 1 & 1 & 0 & 1& 1& 1& 0& X& 1& 0&0\\ \hline 
-        1 & 0 & 0 & 1 & 1&1& 0&0& X& 0& 1&1\\ \hline 
- 1 & 0 & 0 & 1 & 1& 1& 0& 1& 0& 0& 1&0\\ \hline 
- 1 & 0 & 0 & 1 & 1& 1& 0& 1& 1& 0& 0&1\\ \hline 
- 1 & 0 & 0 & 1 & 1& 1& 1& 0& X& 1& 0&0\\ \hline 
-        1& 0& 1&  \multicolumn{9}{|c|}{No Such State}\\ \hline 
-        1& 1& 0&  \multicolumn{9}{|c|}{No Such State}\\ \hline 
-        1 & 1 & 1 & 1 & 0&0& 0&0& X& 0& 0&0\\ \hline
- 1 & 1 & 1 & 1 & 0& 0& 0& 1& X& 1& 1&1\\ \hline 
- 1 & 1 & 1 & 1 & 0& 0& 1& 0& 0& 0& 0&1\\ \hline 
- 1 & 1 & 1 & 1 & 0& 0& 1& 0& 1& 0& 1&0\\ \hline
+        0  & 0  & 0  & 0  & 0   & 0   & 0   & 0   & X  & 0  & 0  & 0  \\ \hline
+        0  & 0  & 0  & 0  & 0   & 0   & 0   & 1   & X  & 1  & 1  & 1  \\ \hline
+        0  & 0  & 0  & 0  & 0   & 0   & 1   & 0   & 0  & 0  & 0  & 1  \\ \hline
+        0  & 0  & 0  & 0  & 0   & 0   & 1   & 0   & 1  & 0  & 1  & 0  \\ \hline
+        0  & 0  & 1  & 0  & 0   & 1   & 0   & 0   & X  & 0  & 0  & 1  \\ \hline
+        0  & 0  & 1  & 0  & 0   & 1   & 0   & 1   & 0  & 0  & 0  & 0  \\ \hline
+        0  & 0  & 1  & 0  & 0   & 1   & 0   & 1   & 1  & 1  & 1  & 1  \\ \hline
+        0  & 0  & 1  & 0  & 0   & 1   & 1   & 0   & 0  & 0  & 1  & 0  \\ \hline
+        0  & 0  & 1  & 0  & 0   & 1   & 1   & 0   & 1  & 0  & 1  & 1  \\ \hline
+        0  & 1  & 0  & 0  & 1   & 0   & 0   & 0   & X  & 0  & 1  & 0  \\ \hline
+        0  & 1  & 0  & 0  & 1   & 0   & 0   & 1   & 0  & 0  & 0  & 1  \\ \hline
+        0  & 1  & 0  & 0  & 1   & 0   & 0   & 1   & 1  & 0  & 0  & 0  \\ \hline
+        0  & 1  & 0  & 0  & 1   & 0   & 1   & 0   & 0  & 0  & 1  & 1  \\ \hline
+        0  & 1  & 0  & 0  & 1   & 0   & 1   & 0   & 1  & 1  & 0  & 0  \\ \hline
+        0  & 1  & 1  & 0  & 1   & 1   & 0   & 0   & X  & 0  & 1  & 1  \\ \hline
+        0  & 1  & 1  & 0  & 1   & 1   & 0   & 1   & 0  & 0  & 1  & 0  \\ \hline
+        0  & 1  & 1  & 0  & 1   & 1   & 0   & 1   & 1  & 0  & 0  & 1  \\ \hline
+        0  & 1  & 1  & 0  & 1   & 1   & 1   & 0   & X  & 1  & 0  & 0  \\ \hline
+        1  & 0  & 0  & 1  & 1   & 1   & 0   & 0   & X  & 0  & 1  & 1  \\ \hline
+        1  & 0  & 0  & 1  & 1   & 1   & 0   & 1   & 0  & 0  & 1  & 0  \\ \hline
+        1  & 0  & 0  & 1  & 1   & 1   & 0   & 1   & 1  & 0  & 0  & 1  \\ \hline
+        1  & 0  & 0  & 1  & 1   & 1   & 1   & 0   & X  & 1  & 0  & 0  \\ \hline
+        1  & 0  & 1  & \multicolumn{9}{c|}{No Such State}                \\ \hline
+        1  & 1  & 0  & \multicolumn{9}{c|}{No Such State}                \\ \hline
+        1  & 1  & 1  & 1  & 0   & 0   & 0   & 0   & X  & 0  & 0  & 0  \\ \hline
+        1  & 1  & 1  & 1  & 0   & 0   & 0   & 1   & X  & 1  & 1  & 1  \\ \hline
+        1  & 1  & 1  & 1  & 0   & 0   & 1   & 0   & 0  & 0  & 0  & 1  \\ \hline
+        1  & 1  & 1  & 1  & 0   & 0   & 1   & 0   & 1  & 0  & 1  & 0  \\ \hline
     \end{tabular}
-    \caption{}
+    \caption{Truth table for the state machine. \textbf{OB}: out\_blocked, \textbf{OP1}: out\_position1, \textbf{OP0}: out\_position0, \textbf{IL1}: in\_leftright1, \textbf{IL0}: in\_leftright0, \textbf{IS}: in\_speed. X denotes "don't care" conditions.}
     \label{tab:truth_table}
 \end{table}
 

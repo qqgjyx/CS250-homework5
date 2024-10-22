@@ -1,0 +1,64 @@
+\textbf{Solution:}
+
+\noindent
+Let's perform an initial simplification:
+
+\textbf{For D0:}
+\begin{align*}
+    D0 &= !Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
+       &\quad !Q0 \cdot Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 \cdot IS + \\
+       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 + \\
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 + \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \\
+    &= 
+\end{align*}
+
+\textbf{For D1:}
+\begin{align*}
+    D1 &= !Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad !Q0 \cdot !Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 \cdot IS + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \cdot !IS + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \cdot IS + \\
+       &\quad !Q0 \cdot Q1 \cdot !Q2 \cdot !IL1 \cdot !IL0 + \\
+       &\quad !Q0 \cdot Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 \cdot !IS + \\
+       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot !IL0+ \\
+       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot !IL0 + \\
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + IS \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \cdot IS \\
+    &= 
+\end{align*}
+
+\textbf{For D2:}
+\begin{align*}
+    D2 &= !Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad !Q0 \cdot !Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 \cdot !IS + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot !IL1 \cdot !IL0 + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
+       &\quad !Q0 \cdot !Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \cdot IS + \\
+       &\quad !Q0 \cdot Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 \cdot !IS + \\
+       &\quad !Q0 \cdot Q1 \cdot !Q2 \cdot IL1 \cdot !IL0 \cdot !IS + \\
+       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot !IL0 + \\
+       &\quad !Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot !IL0 + \\
+       &\quad Q0 \cdot !Q1 \cdot !Q2 \cdot !IL1 \cdot IL0 \cdot IS + \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot !IL1 \cdot IL0 + \\
+       &\quad Q0 \cdot Q1 \cdot Q2 \cdot IL1 \cdot !IL0 \cdot !IS \\
+    &= 
+\end{align*}
+
+\noindent
+The logic expression of output bits are obivious:
+
+\begin{align*}
+    \text{out\_blocked} &=  Q0 \\
+    \text{out\_posision1} &= !Q0 \cdot Q2 + Q0 \cdot !Q2 \\
+    \text{out\_posision0} &= !Q0 \cdot Q1 + Q0 \cdot !Q1
+\end{align*}
+
+% ----------------------------------------------------------------
+% Drafted by Juntang Wang 2024-10-22
+% ----------------------------------------------------------------  
