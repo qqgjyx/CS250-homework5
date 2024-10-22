@@ -2,36 +2,43 @@
 
 \noindent
 Extract all the true output cases and take the sum:
-$
+\[
 !A !B !C +
 !A  B !C +
  A !B !C +
  A  B  C
-$
+\]
 
 \noindent
 Combining first and third terms
-$
+\(
 (!A + A) !B !C = !B !C,
-$
+\)
 we have:
-$
+\[
 !B !C +
 !A  B !C +
  A  B  C
-$
+\]
 
 \noindent
-Combining first and second terms
-$
+Since $!A !B !C$ already covered in $!B !C$, s.t. $!A  B !C + !A !B !C = !A !C$
+
+\noindent
+combining first and second terms
+\(
 !B !C +
-!A  B !C = !C(!A + !B)
-$
+!A  B !C
+= !B !C + !A !C
+= !C(!A + !B)
+\)
 we have:
-$
+\[
+\boxed{
 !C(!A + !B) +
  A  B  C
-$
+}
+\]
 
 % ----------------------------------------------------------------
 % Drafted by Juntang Wang 2024-10-21
