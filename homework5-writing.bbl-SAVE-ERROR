@@ -1,0 +1,100 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{boolean-algebra}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=12d5c51ee043e1f46b9af15fcbcd7a38}{%
+           family={{Boolean-Algebra.com}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{fullhash}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{fullhashraw}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{bibnamehash}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{authorbibnamehash}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{authornamehash}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{authorfullhash}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \strng{authorfullhashraw}{12d5c51ee043e1f46b9af15fcbcd7a38}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Boolean Algebra}
+      \verb{urlraw}
+      \verb https://www.boolean-algebra.com
+      \endverb
+      \verb{url}
+      \verb https://www.boolean-algebra.com
+      \endverb
+      \warn{\item online entry 'boolean-algebra' (CS250.bib): Invalid format '2024' of date field 'date' - ignoring}
+    \endentry
+    \entry{lucidchart}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8210cfe8e27ed0afda0ea65fa9716a72}{%
+           family={{Lucid Software Inc.}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{fullhash}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{fullhashraw}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{bibnamehash}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{authorbibnamehash}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{authornamehash}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{authorfullhash}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \strng{authorfullhashraw}{8210cfe8e27ed0afda0ea65fa9716a72}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lucidchart}
+      \verb{urlraw}
+      \verb https://www.lucidchart.com
+      \endverb
+      \verb{url}
+      \verb https://www.lucidchart.com
+      \endverb
+      \warn{\item online entry 'lucidchart' (CS250.bib): Invalid format '2024' of date field 'date' - ignoring}
+    \endentry
+    \entry{openai2024possum}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Illustration of a Possum}
+      \warn{\item misc entry 'openai2024possum' (CS250.bib): Invalid format '2024-10' of date field 'date' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
